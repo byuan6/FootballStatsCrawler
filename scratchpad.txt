@@ -1,0 +1,78 @@
+
+Jeremy Langford problem
+... Backups who are extremely effective in taking over for the starter in short spells
+    end up higher ranked, than players who play a lot
+... so the system has to take into account how many actual games he has played
+... but the current system penalizes injuries (or games not played) so heavily, it creates a ranking that benefits positions where a player stays healthy, ie.QB.  
+... But if a single player stays healthy at RB or WR, it is apparent that that player produces a higher win pct over QB.
+
+1) We can determine the most effective player when they played
+2) We can determine the most effective player over the season, by marking 0 for games they missed
+3) We have no system of determining what value to assign when he missed a game
+   - We can pull a random player from the backup ranks to also add what kind of effect his injury would had on team
+
+A. Who made the most of their opportunities
+B. who was full season best performing player? ...creates a ranking full-season
+C. Who should have been flex? ...should be based on full-season testing, bc costing at a full season measurement
+D. How many wins did a player add, when he was starting... meaning 
+E. Redo most valuable player, taking into account the drop off into back territory
+
+
+Did last week's results agree with Monte?
+
+
+1.cleanup
+2.Stephen Gostkowski problem
+Why is kicker so high in rank
+3. separate past performance ranking from predicted ranked (removes injured players)
+            Grade                         Ranked
+4. It took me an entire day to get the rosters...  It took me 15 minutes to create the proxy for the database...
+   ...create a tool to simplify creation of the tests, and the parse the data out.
+      ...3 tab view.  1 raw html.  1 tokenized.  1 DOM tree.
+      ...4th tab has 3 split view with DOM tree.  upper left, we have listbox where we can create a record definition.  upper right, we have a DOM tree.  drag and drop DOM tree to record definition.  have button run the parse and put it into datagrid in 3rd split view at bottom.
+5. allow monte to detect when there is no change in Stats, so why re-run it?  Give error message.  Create a flag to override.
+6. Website spell check.  should only be checking literals.
+7. Histogram maker
+
+2015/12/6
+8. command line (I think I had this idea already for IIS logs to see who had errors, but someone showed me logparser)
+   - from [filename] /as [alias] [filename] /as [alias] [filename]
+     - interpreter /library library recognize file and turn it into name/value pair
+   - | headers [column name1] [column name2]...
+   - | innerjoin [one table only] ON [join conditions] /where [where conditions]
+   - | leftjoin [one table only] ON [join conditions] /where [where conditions]
+   - | rightjoin [one table only] ON [join conditions] /where [where conditions]
+   - | select [column index/name]
+     - pick the column to display
+     - pick a function to apply
+     - parser?
+   - | where [condition]
+   - | groupby [column name] [column name] [column index] /avg [column name] [column index]
+                /sum [column name] /max /min /count
+   - | orderby [column name] /desc [column order]
+   - | tempfile [filename]... outputs filename
+9. command line histogram converter /  group by
+
+
+
+actual draft
+ADP
+http://football.myfantasyleague.com/2013/adp?COUNT=250&POS=*&CUTOFF=5&FRANCHISES=-1&IS_PPR=-1&IS_KEEPER=0&IS_MOCK=-1&TIME=
+
+how accurate are the ADP for ranking players?
+
+-------------------------------------------
+write another monte to take in variables that lead up to a game such as
+ player, team, pos, depth on team, coach, stadium, time, month, injured rating, 
+ versus same ratings
+
+output being points
+
+see if monte can find coefficent for each possibility at each category
+ lynch, seattle, rb, starter, carroll, riverhead, 1:30p, oct, probable 3 days before game.
+
+see if there is a linear regression factor for continuous variables, for each player... since they are the one's performing.
+
+
+add support for error bars
+http://stackoverflow.com/questions/20434344/error-bar-change-upper-lower-and-center-errors-independently-of-each-other

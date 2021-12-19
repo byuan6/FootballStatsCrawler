@@ -1,0 +1,10 @@
+head to head
+team that scores the most is generally the best team
+team that is scored against the most could be considered
+  - the worst team bc everyone else has selected players better than they did
+    - so it should be the reverse of the most scored list
+  - unless it isnt
+  - if it is considered the unluckiest team, the one that has been scored most against, 
+    how to quantify the unluckiness.
+
+- tool to create htmlquery, when clicking an element
