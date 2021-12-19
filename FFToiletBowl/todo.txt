@@ -1,0 +1,291 @@
+﻿/HTML/BODY/DIV///DIV//DIV/DIV/DIV/H/LITERAL
+Sunday, September 9
+
+/HTML/BODY/DIV///DIV//DIV/DIV/DIV/TABLE/TBody/TR/TD[0]/A/ABBR/LITERAL
+/HTML/BODY/DIV///DIV//DIV/DIV/DIV/TABLE/TBody/TR/TD[0]/A/SPAN/LITERAL
+/HTML/BODY/DIV///DIV//DIV/DIV/DIV/TABLE/TBody/TR/TD[1]/DIV/A/ABBR/LITERAL
+/HTML/BODY/DIV///DIV//DIV/DIV/DIV/TABLE/TBody/TR/TD[1]/DIV/A/SPAN[0]/LITERAL
+/HTML/BODY/DIV///DIV//DIV/DIV/DIV/TABLE/TBody/TR/TD[2]/A
+/HTML/BODY/DIV///DIV//DIV/DIV/DIV/TABLE/TBody/TR/TD[2]/A[0]/LITERAL
+/HTML/BODY/DIV///DIV//DIV/DIV/DIV/TABLE/TBody/TR/CLOSURE
+
+/HTML/BODY/DIV///DIV//DIV/DIV/DIV/DIV/TABLE/TBody/TR/TD[0]/A/SPAN/LITERAL
+/HTML/BODY/DIV///DIV//DIV/DIV/DIV/DIV/TABLE/TBody/TR/TD[0]/A//LITERAL
+/HTML/BODY/DIV///DIV//DIV/DIV/DIV/DIV/TABLE/TBody/TR/TD[1]/A/SPAN/LITERAL
+/HTML/BODY/DIV///DIV//DIV/DIV/DIV/DIV/TABLE/TBody/TR/TD[1]/A//LITERAL
+/HTML/BODY/DIV///DIV//DIV/DIV/DIV/DIV/TABLE/TBody/TR/TD[2]/A
+/HTML/BODY/DIV///DIV//DIV/DIV/DIV/DIV/TABLE/TBody/TR/TD[2]/A[0]/LITERAL
+/HTML/BODY/DIV///DIV//DIV/DIV/DIV/DIV/TABLE/TBody/TR/CLOSURE
+
+/HTML/BODY/DIV///DIV//DIV/DIV/DIV/DIV/TABLE/TBody/TR/TD[0]/A/SPAN/LITERAL
+/HTML/BODY/DIV///DIV//DIV/DIV/DIV/DIV/TABLE/TBody/TR/TD[0]/A//LITERAL
+/HTML/BODY/DIV///DIV//DIV/DIV/DIV/DIV/TABLE/TBody/TR/TD[1]/DIV/A/SPAN/LITERAL
+/HTML/BODY/DIV///DIV//DIV/DIV/DIV/DIV/TABLE/TBody/TR/TD[1]/DIV/A//LITERAL
+/HTML/BODY/DIV///DIV//DIV/DIV/DIV/DIV/TABLE/TBody/TR/TD[2]/A
+/HTML/BODY/DIV///DIV//DIV/DIV/DIV/DIV/TABLE/TBody/TR/TD[2]/A/LITERAL
+/HTML/BODY/DIV///DIV//DIV/DIV/DIV/DIV/TABLE/TBody/TR/CLOSURE
+
+/HTML/BODY/DIV///DIV/DIV/DIV/DIV/DIV/DIV//DIV/DIV/UL/LI/DIV/A/DIV/SPAN/IMG
+<img class="team-logo" src="https://a.espncdn.com/combiner/i?img=/i/teamlogos/nfl/500/sf.png&h=100&w=100"/>
+
+
+
+
+1. we need a PassStop column for field position at end of pass play
+2. X you need to match on "yard" and "yards" on the prepositions
+3. WSH in schedule vs WAS in play by play text, means the field side isn't going to match
+   - you may need to replace the field position column values with consistent ones, post-facto.
+4. X Add "tackled by" parentoken followed at end of "for _ yards"
+5. PENALTY
+    this.IsPenaltyAccepted needs to be set to true, when it is accepted
+6. Add "incomplete" as a adverb
+   you also need .PassComplete column now.
+7. rundirection/formation needs an event handler to populate "tackle/guard/end"
+8. "Pass Caught At" is not a common value.  There needs to be a flag for it
+9. PENALTY can follow time
+   "(12:20 - 1st)  PENALTY on WAS-T.Williams, False Start, 5 yards, enforced at ARZ 30 - No Play."
+10. after getting the above fixed, add DEBUG and reconstruct the line from it's parts.  if it doesn't match, then kick out to investigate
+
+
+		this.Play	"(10:29 - 1st)  (Shotgun) A.Smith pass incomplete short left [D.Bucannon]. PENALTY on WAS-A.Smith, Intentional Grounding, 12 yards, enforced at ARZ 29."	string
+		play.ToString()	"(10:29 - 1st)  (Shotgun) A.Smith pass incomplete short left PENALTY"	string
+
+		this.Play	"(8:47 - 1st)  J.Wetzel reported in as eligible.  D.Johnson up the middle to ARZ 31 for 11 yards (D.Swearinger)."	string
+		play.ToString()	"(8:47 - 1st)  J.Wetzel reported in as eligible. D.Johnson up the middle to ARZ 31 for 11 yards (D.Swearinger)."	string
+
+		this.Play	"(3:51 - 1st)  (Shotgun) A.Smith pass incomplete short left to J.Crowder [T.Boston]."	string
+		play.ToString()	"(3:51 - 1st)  (Shotgun) A.Smith pass incomplete short left to J.Crowder"	string
+
+		this.Play	"(14:16 - 2nd)  D.Johnson up the middle to ARZ 28 for no gain (Z.Brown)."	string
+		play.ToString()	"(14:16 - 2nd)  D.Johnson up the middle to ARZ 28 for 0 yards"	string
+
+		this.Play	"(13:16 - 2nd)  A.Smith scrambles right end ran ob at WAS 32 for 5 yards (B.Baker)."	string
+		play.ToString()	"(13:16 - 2nd)  A.Smith scrambles right end for 5 yards (B.Baker)."	string
+
+		this.Play	"(10:13 - 2nd)  (Shotgun) A.Smith pass short left to C.Thompson to 50 for 3 yards (J.Taylor)."	string
+		play.ToString()	"(10:13 - 2nd)  (Shotgun) A.Smith pass short left to C.Thompson for 3 yards (J.Taylor)."	string
+
+		this.Play	"(8:46 - 2nd)  (Shotgun) A.Smith pass short left to J.Reed pushed ob at ARZ 27 for 22 yards (A.Bethea)."	string
+		play.ToString()	"(8:46 - 2nd)  (Shotgun) A.Smith pass short left to J.Reed for 0 yards"	string
+
+		this.Play	"(6:13 - 2nd)  (Shotgun) A.Smith pass short middle to J.Crowder to ARZ 4 for 10 yards (J.Bynes) [B.Mayowa]."	string
+		play.ToString()	"(6:13 - 2nd)  (Shotgun) A.Smith pass short middle to J.Crowder to ARZ 4 for 10 yards (J.Bynes)"	string
+
+		this.Play	"(12:52 - 3rd)  A.Peterson left end to WAS 4 for -4 yards (C.Peters). Penalty on WAS-C.Roullier, Offensive Holding, declined."	string
+		play.ToString()	"(12:52 - 3rd)  A.Peterson left end to WAS 4 for -4 yards (C.Peters)."	string
+
+		this.Play	"(12:25 - 3rd)  A.Smith pass incomplete short left to J.Doctson [R.Nkemdiche]."	string
+		play.ToString()	"(12:25 - 3rd)  A.Smith pass incomplete short left to J.Doctson"	string
+
+		this.Play	"(9:19 - 3rd)  (Shotgun) A.Smith pass incomplete deep middle to P.Richardson. PENALTY on ARZ-J.Taylor, Defensive Holding, 5 yards, enforced at WAS 23 - No Play."	string
+		play.ToString()	"(9:19 - 3rd)  (Shotgun) A.Smith pass incomplete deep middle to P.Richardson. PENALTY"	string
+
+PENALTY on ARZ-J.Taylor, Defensive Holding, 5 yards, enforced at WAS 23 - No Play
+IsPenaltyNoPlay
+PenaltyPlayer
+PenaltyRule
+PenaltyYardage
+PenaltyEnforcedAt
+
+		this.Play	"(2:03 - 3rd)  (No Huddle, Shotgun) S.Bradford pass deep left intended for R.Seals-Jones INTERCEPTED by Q.Dunbar [P.McPhee] at WAS 27. Q.Dunbar to WAS 24 for -3 yards (R.Seals-Jones)."	string
+		play.ToString()	"(2:03 - 3rd)  (No Huddle, Shotgun) S.Bradford pass deep left to WAS for -3 yards (R.Seals-Jones)."	string
+
+		this.Play	"(11:45 - 4th)  (No Huddle, Shotgun) S.Bradford pass short left to R.Seals-Jones ran ob at ARZ 36 for 7 yards (Q.Dunbar)."	string
+		play.ToString()	"(11:45 - 4th)  (No Huddle, Shotgun) S.Bradford pass short left to R.Seals-Jones for 7 yards (Q.Dunbar)."	string
+
+    [2]: {[pushed, 2226]} ??pushed ob at
+    [5]: {[enforced, 1666]} penalties
+    [24]: {[INTERCEPTED, 401]} intercepted
+    [51]: {[FUMBLES, 192]} fumbles
+brackets too
+
+
+"(0:14 - 4th)  (Shotgun) B.Roethlisberger pass short left to J.Washington to PIT 35 for 5 yards. Lateral to J.Smith-Schuster ran ob at OAK 22 for 43 yards (K.Joseph)."
+...will crash
+
+"(4:51 - 3rd)  C.Keenum pass deep left to C.Sutton ran ob at OAK 32 for 42 yards [A.Key]. Oakland challenged the pass completion ruling, and the play was REVERSED. C.Keenum pass incomplete deep left to C.Sutton (G.Conley) [A.Key]."
+...will crash
+
+"(1:07 - 2nd)  (Shotgun) S.Darnold pass incomplete deep right to Q.Enunwa. PENALTY on JAX-T.Gipson, Taunting, 14 yards, enforced between downs."
+...will crash
+
+"(15:00 - 1st)  (Shotgun) R.Tannehill pass deep right to K.Stills ran ob at MIA 47 for 22 yards. MIA 21-Gore 200th career NFL game, 8th RB in NFL history to achieve that milestone."
+...will crash
+
+"(9:54 - 2nd)  D.Johnson right end to CLV 44 for -3 yards. Pass back to N.Chubb to CLV 49 for 5 yards (F.Oluokun)."
+...will crash
+
+"(4:51 - 4th)  (No Huddle, Shotgun) K.Cousins pass short middle to A.Robinson for 13 yards, TOUCHDOWN.TWO-POINT CONVERSION ATTEMPT. K.Cousins pass to A.Thielen is complete. ATTEMPT SUCCEEDS."
+...will crash
+
+
+FFToiletBowl.PlayByPlay.__topworderrors()
+Count = 3157
+    [0]: {[at, 959]}
+    [1]: {[for, 530]}
+    [2]: {[was, 401]}
+    [3]: {[Caught, 397]}
+    [4]: {[play., 396]}
+    [5]: {[injured, 392]}
+    [6]: {[during, 391]}
+    [7]: {[the, 369]}
+    [8]: {[Pass, 358]}
+    [9]: {[yards., 321]}
+    [10]: {[YAC, 318]}
+    [11]: {[by, 289]}
+    [12]: {[downed, 246]}
+    [13]: {[No, 235]}
+    [14]: {[of, 233]}
+    [15]: {[Play., 231]}
+    [16]: {[right., 225]}
+    [17]: {[is, 210]}
+    [18]: {[out, 198]}
+    [19]: {[from, 197]}
+    [20]: {[50, 190]}
+    [21]: {[INTERCEPTED, 183]}
+    [22]: {[intended, 181]}
+    [23]: {[bounds., 166]}
+    [24]: {[Touchback., 160]}
+    [25]: {[ob, 145]}
+    [26]: {[1, 102]}
+    [27]: {[pushed, 101]}
+    [28]: {[on, 99]}
+    [29]: {[return, 98]}
+    [30]: {[caught, 98]}
+    [31]: {[His, 96]}
+    [32]: {[Kick), 95]}
+    [33]: {[yards, 95]}
+    [34]: {[ATTEMPT, 88]}
+    [35]: {[Coverage, 85]}
+    [36]: {[sideline, 82]}
+    [37]: {[yards,, 79]}
+    [38]: {[5, 79]}
+    [39]: {[left., 79]}
+    [40]: {[0, 76]}
+    [41]: {[pass,, 71]}
+    [42]: {[receiver, 67]}
+    [43]: {[II, 66]}
+    [44]: {[10, 65]}
+    [45]: {[2, 65]}
+    [46]: {[3, 65]}
+    [47]: {[BUF, 65]}
+    [48]: {[Questionable., 64]}
+    [49]: {[IV, 64]}
+    [50]: {[in, 64]}
+    [51]: {[8, 63]}
+    [52]: {[4, 60]}
+    [53]: {[middle., 59]}
+    [54]: {[6, 57]}
+    [55]: {[9, 56]}
+    [56]: {[SUCCEEDS., 56]}
+    [57]: {[PENALTY, 52]}
+    [58]: {[enforced, 52]}
+    [59]: {[0-YAC, 52]}
+    [60]: {[near, 51]}
+    [61]: {[25, 48]}
+    [62]: {[yard, 48]}
+    [63]: {[flat, 48]}
+    [64]: {[Thrown, 47]}
+    [65]: {[12, 46]}
+    [66]: {[14, 45]}
+    [67]: {[7, 45]}
+    [68]: {[ran, 45]}
+    [69]: {[gain, 41]}
+    [70]: {[15, 41]}
+    [71]: {[crossing, 40]}
+    [72]: {[complete., 39]}
+    [73]: {[and, 39]}
+    [74]: {[11, 38]}
+    [75]: {[no, 38]}
+    [76]: {[17, 38]}
+    [77]: {[13, 36]}
+    [78]: {[21, 36]}
+    [79]: {[19, 35]}
+    [80]: {[16, 35]}
+    [81]: {[along, 35]}
+    [82]: {[FAILS., 33]}
+    [83]: {[NE, 33]}
+    [84]: {[5,, 33]}
+    [85]: {[Receiver, 33]}
+    [86]: {[26, 32]}
+    [87]: {[31, 32]}
+    [88]: {[zone., 32]}
+    [89]: {[23, 31]}
+    [90]: {[PAT, 31]}
+    [91]: {[35, 31]}
+    [92]: {[coverage, 31]}
+    [93]: {[45., 31]}
+    [94]: {[incomplete., 30]}
+    [95]: {[36., 30]}
+    [96]: {[4,, 30]}
+    [97]: {[failed), 29]}
+    [98]: {[18, 29]}
+    [99]: {[Holding,, 29]}
+    < More... (The first 100 of 3158 items were displayed.) >
+
+(2:03 - 3rd)  J.Adams left tackle to WAS 6 for 3 yards (D.Everett). WAS-D.Everett was injured during the play.
+(6:51 - 3rd)  (Shotgun) N.Foles pass short middle to N.Agholor pushed ob at 50 for -3 yards (Z.Brown). Shovel pass
+
+footnotes
+
+(5:57 - 1st)  A.Lee punts 60 yards to end zone, Center-A.Brewer, Touchback.
+(6:50 - 1st)  T.Way punts 39 yards to PHI 19, Center-A.East. D.Sproles to PHI 21 for 2 yards (A.Alexander).
+(0:22 - 1st) Jake Elliott 33 Yd Field Goal
+(14:30 - 4th)  T.Way punts 35 yards to PHI 25, Center-A.East, downed by WAS-A.East
+
+(14:30 - 4th)  T.Way punts 35 yards to PHI 25, Center-A.East, caught by WAS-A.East
+
+fair caught by _
+downed by _
+_ to PHI 21 for _ yards (tackledby)
+
+_Player punts _yards to _ _, Center-_, Touchback
+                                       fair caught by _
+                                       _ to _ _ for _ yards (_)
+                                       downed by _
+
+SKIPPING 
+(13:56 - 1st)  M.Ryan pass deep left to J.Jones pushed ob at GB 28 for 19 yards (J.Alexander). 
+Green Bay challenged the pass completion ruling, and the play was Upheld. 
+The ruling on the field stands. (Timeout #2.)
+
+
+... what im thinking about now, is that the unit test to rebuild the play, from parsed, takes a long time to write
+    and quite frankly, might not be data relevant for this, but is ncessary to rebuild
+    punting, the least interesting play, statistically, has as much, if not more, variations on the play, as a run or pass.
+    yet fails the unit test at the highest /bc I don't want to build the damn test
+
+...plus the weird plays have multiple sentences
+   ... challenges
+   ... laterals
+   ... flea flickers
+   These need to be accounted for, but are such a small amount of the sample
+
+...plus injuries have a problem
+...reporting to be eligible
+   these are all multi-sentence plays, which are going to be a pain to re-build to for the test
+ but we are at a 60% success parse rate.
+   ...with punts failing, the ceiling is 75%, if you think about it.  4th downs are almost all untestable to see if it parsed correctly.
+
+...[ ] sacks are not parsing correctly
+...[ ] field goals are not parsing correctly
+...[ ] we need to have multi-leg plays, multiple legs as different sentences
+       each sentence has to have a detection
+       how are we going to code termination of parsing at end of array
+       how are we going identify each phrase type?
+         esp if "runs" don't have the word run in it?
+       parse should return a int of completed parsed.
+       10 /11 means 11 tokens, 10 met the expectations
+       1/11 means just one did, so we pick the highest score.
+          pass will get zero because the first parse is always "pass"
+          run will get like 10/11
+          sack
+       the problem with this approach is... the parse executes event handlers... if one was executed before, but future parsing evaluation is more appropriate, no way to rollback automaically.
+
+
+
+
+parsing "to 50" is not working
+
+
+
