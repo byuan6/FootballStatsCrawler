@@ -36,11 +36,14 @@ has never been started.  It is intended as a montecarlo type simulation of possi
 The dll's for parsing HTML.  PLus a utility to see how the parser will return data to you.  These were copied from HTMLParser repo.  This copy of the project probably will not change, unless there is bug to be fixed.  Or someone needs a feature developed in a future HTMLparser project, to implement a new feature here... yeah, it's never going to be updated.
 
 ## Histogram, HtmlTable, Plot
+CLI utilities to create content files, in a automation process.
 
 ## ViewPng
+Just in case your image viewer isn't working
 
 ## HTml2tsv, Browserscript, CacheStdout, ConsoleApplication1
 I don't remember what these were for anymore and I'm too lazy to look in them
 
 ## Wordpress
+CLI utilities to upload to wordpress.
 
