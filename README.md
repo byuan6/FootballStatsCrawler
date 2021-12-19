@@ -35,11 +35,14 @@ has never been started.  It is intended as a montecarlo type simulation of possi
 ## CrawlerCommon, CrawlerHpathUI
 The dll's for parsing HTML.  PLus a utility to see how the parser will return data to you.  These were copied from HTMLParser repo.  This copy of the project probably will not change, unless there is bug to be fixed.  Or someone needs a feature developed in a future HTMLparser project, to implement a new feature here... yeah, it's never going to be updated.
 
+## Batch
+This was create at a time, I thought it would be sufficient to view my analysis in a blog.  But wordpress, as easy as it is to use from a publishing point of view, is incredible non-dynamic and non-interactive, if you want to see your project in a "live" way.  So, I started FFToiletBowlWeb to present a more dynamic view of the analysis.  But never finished.  It's not useless, but it is outdated as https://beyondtoiletbowl.wordpress.com/ is no longer being updated.
+
 ## Histogram, HtmlTable, Plot
 CLI utilities to create content files, in a automation process.
 
 ## ViewPng
-Just in case your image viewer isn't working
+Just in case your image viewer isn't working.  This one also doesn't expand to maximized, so I can see all different charts in different windows.
 
 ## HTml2tsv, Browserscript, CacheStdout, ConsoleApplication1
 I don't remember what these were for anymore and I'm too lazy to look in them
