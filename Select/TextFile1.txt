@@ -1,0 +1,3 @@
+﻿ColA	ColB	ColC	ColD	ColE	ColF	ColG
+Bobb	Octo	0012	1974	0005	0010	215
+Puddle	June	0001	2004	0002	0002	65

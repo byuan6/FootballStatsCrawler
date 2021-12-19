@@ -1,0 +1,11 @@
+﻿Player	Pts
+Tom	10.1
+Joe	20.2
+Willy	40.4
+Johnson	80.8
+Sam	160.16
+Max	320.32
+Larry	160.16
+Blondie	80.8
+Grace	40.4
+Maria	20.2
