@@ -1,0 +1,184 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{2B347FAF-2D47-4E9F-9159-DA9074EF7205}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Batch</RootNamespace>
+    <AssemblyName>Batch</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="FFToiletBowl.visualstudio.bak">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="ManualDatabaseInstall\FFToiletBowlMDF.2001-2018.7z" />
+    <None Include="ManualDatabaseInstall\install_FFToiletBowl_DB.bat" />
+    <None Include="ProcessLastWeekStats.bat">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="test.bat">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AddImageToWordpress\PostImageToWordpress.csproj">
+      <Project>{19489069-166B-4F81-8197-A106AC921E2C}</Project>
+      <Name>PostImageToWordpress</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CacheStdOut\CacheStdOut.csproj">
+      <Project>{5C19F773-0EAF-48D0-B3CD-2B9251473FEC}</Project>
+      <Name>CacheStdOut</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CrawlerCommon\CrawlerCommon.csproj">
+      <Project>{CD0163BB-1D0A-4869-AAAA-EA21EE8B964A}</Project>
+      <Name>CrawlerCommon</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FFToiletBowlSQL\FFToiletBowlSQL.csproj">
+      <Project>{FBABCE8A-20E9-4F55-A4E4-8336F28331BD}</Project>
+      <Name>FFToiletBowlSQL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GetRostersFromESPN\GetRostersFromESPN.csproj">
+      <Project>{D06961A2-6703-48C1-8B65-AF56DBD4961B}</Project>
+      <Name>GetRostersFromESPN</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GetStats\GetStats.csproj">
+      <Project>{85EB70FD-6300-4CE7-9EE2-586460919040}</Project>
+      <Name>GetStats</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Histogram\Histogram.csproj">
+      <Project>{214FB44F-AEDA-4E48-A0C0-85CC737F064C}</Project>
+      <Name>Histogram</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\HtmlTable\HtmlTable.csproj">
+      <Project>{0FB0617C-6619-4036-9F80-31AF6D0E7AD8}</Project>
+      <Name>HtmlTable</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NumList\NumList.csproj">
+      <Project>{495DC4D8-B1E2-4AEE-B4C6-266E01EE586D}</Project>
+      <Name>NumList</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Plot\Plot.csproj">
+      <Project>{2D336083-B50F-42CC-B300-249D9EFD23D7}</Project>
+      <Name>Plot</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PostNewToWordpress\PostNewToWordpress.csproj">
+      <Project>{41893E99-FB61-4017-9F05-734DC9D7ABD0}</Project>
+      <Name>PostNewToWordpress</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\RegReader\RegReader.csproj">
+      <Project>{449A912C-117F-4ECA-B26B-9F1CD4986B90}</Project>
+      <Name>RegReader</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Select\Select.csproj">
+      <Project>{088E3A3C-695B-41AC-833D-8507738B638B}</Project>
+      <Name>Select</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TwoTeamMonteCarlo\TwoTeamMonteCarlo.csproj">
+      <Project>{5786EA50-F35E-4017-9B7D-ADDEE40457EA}</Project>
+      <Name>TwoTeamMonteCarlo</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ViewPng\ViewPng.csproj">
+      <Project>{ED48576D-BB3B-4C05-8043-DFCA22D5ADDE}</Project>
+      <Name>ViewPng</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ProcessEnvironment.cs" />
+    <Compile Include="Program.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="expected.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ManualDatabaseInstall\blankdatabase on fujibook.sql" />
+    <Content Include="ManualDatabaseInstall\blankdatabase.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
