@@ -2,8 +2,8 @@
 Project to steal other website's Football Stats, in a misguided attempt to evaluate them, the same way as finance.
 
 ## If you plan to do this for a commercial product, I suggest you buy it from someone who licensed the data, as it is technically owned by NFL.
-Web-scraping is notoriously unreliable and you need to regularly monitor you process, for fixes, when the sources change.
-If this is for programming fun, I don't see much harm here,
+Web-scraping is notoriously unreliable process for getting data, and you need to regularly monitor your process, for fixes, when the sources change.  And you will need to make changes to your code yourself once they make changes, bc I don't plan on updatings this project much after this.
+If this is for programming fun, I don't see much harm here.
 
 ## FFtoiletbowl
 FFtoiletbowl has routines to create a MS Sql Server database to store Football Stats.
