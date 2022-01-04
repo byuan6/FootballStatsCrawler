@@ -2,8 +2,8 @@
 Project to steal other website's Football Stats, in a misguided attempt to evaluate them, the same way as finance.
 
 ## If you plan to do this for a commercial product, I suggest you buy it from someone who licensed the data, as it is technically owned by NFL.
-Web-scraping is notoriously unreliable and you need to regularly monitor you process, for fixes, when the sources change.
-If this is for programming fun, I don't see much harm here,
+Web-scraping is notoriously unreliable process for getting data, and you need to regularly monitor your process, for fixes, when the sources change.  And you will need to make changes to your code yourself once they make changes, bc I don't plan on updatings this project much after this.
+If this is for programming fun, I don't see much harm here.
 
 ## FFtoiletbowl
 FFtoiletbowl has routines to create a MS Sql Server database to store Football Stats.
@@ -35,12 +35,18 @@ has never been started.  It is intended as a montecarlo type simulation of possi
 ## CrawlerCommon, CrawlerHpathUI
 The dll's for parsing HTML.  PLus a utility to see how the parser will return data to you.  These were copied from HTMLParser repo.  This copy of the project probably will not change, unless there is bug to be fixed.  Or someone needs a feature developed in a future HTMLparser project, to implement a new feature here... yeah, it's never going to be updated.
 
+## Batch
+This was create at a time, I thought it would be sufficient to view my analysis in a blog.  But wordpress, as easy as it is to use from a publishing point of view, is incredible non-dynamic and non-interactive, if you want to see your project in a "live" way.  So, I started FFToiletBowlWeb to present a more dynamic view of the analysis.  But never finished.  It's not useless, but it is outdated as https://beyondtoiletbowl.wordpress.com/ is no longer being updated.
+
 ## Histogram, HtmlTable, Plot
+CLI utilities to create content files, in a automation process.
 
 ## ViewPng
+Just in case your image viewer isn't working.  This one also doesn't expand to maximized, so I can see all different charts in different windows.
 
 ## HTml2tsv, Browserscript, CacheStdout, ConsoleApplication1
 I don't remember what these were for anymore and I'm too lazy to look in them
 
 ## Wordpress
+CLI utilities to upload to wordpress.
 
