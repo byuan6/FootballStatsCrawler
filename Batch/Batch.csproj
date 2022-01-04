@@ -72,10 +72,6 @@
       <Project>{19489069-166B-4F81-8197-A106AC921E2C}</Project>
       <Name>PostImageToWordpress</Name>
     </ProjectReference>
-    <ProjectReference Include="..\CacheStdOut\CacheStdOut.csproj">
-      <Project>{5C19F773-0EAF-48D0-B3CD-2B9251473FEC}</Project>
-      <Name>CacheStdOut</Name>
-    </ProjectReference>
     <ProjectReference Include="..\CrawlerCommon\CrawlerCommon.csproj">
       <Project>{CD0163BB-1D0A-4869-AAAA-EA21EE8B964A}</Project>
       <Name>CrawlerCommon</Name>

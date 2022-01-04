@@ -1018,6 +1018,8 @@ namespace GetStats
                     var x = item.ActualSymbol;
                     gamedate = x.Substring(x.IndexOf(",")+1).Trim();
                     parsed.ScheduleDate = DateTime.ParseExact(gamedate + ", " + yr, "MMMM d, yyyy", System.Globalization.CultureInfo.InvariantCulture);
+                    if (parsed.ScheduleDate.Value.Month == 1)
+                        parsed.ScheduleDate = parsed.ScheduleDate.Value.AddYears(1); //the year has changed already
                 }
                 //if (hometeamhref.IsMatch(item)) parsed.;
                 if (hometeamname.IsMatch(item))

@@ -69,6 +69,27 @@ namespace FFToiletBowl
                     {
                         foreach (var row in data)
                         {
+                            /* These lines won't work bc the enumerator is returning a struct
+                             * why this matters, I have no idea.  The semantics between a struct and class
+                             * is largely based on structs are alwmost always copied by value, while classes
+                             * are always copied by reference. 
+                             * 
+                            if (row.Year >= 1995 && row.Year < 2016)
+                            {
+                                if (row.Team == "LAR")
+                                    row.Team = "STL";
+                            }
+                            if (row.Year < 2017)
+                            {
+                                if (row.Team == "LAC")
+                                    row.Team = "SD";
+                            }
+                            if (row.Year < 2020)
+                            {
+                                if (row.Team == "LV")
+                                    row.Team = "OAK";
+                            }*/
+
                             /*
                              * StatLine row;
                             FFToiletBowlDataSet ds = new FFToiletBowlDataSet(); 

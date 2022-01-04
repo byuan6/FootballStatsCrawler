@@ -33,7 +33,7 @@ namespace FFToiletBowl
                     //#games = 32teams * 17weeks - byes
                     //2001 had 31 teams, 2002 had 32 teams
                     //2020 had 17 weeks, 2021 had 18 weeks
-                    var expected = yr <= 2001 ? 17 * 31 : yr <= 21 ? 17 * 32 : 18 * 32;
+                    var expected = yr <= 2001 ? 17 * 31 : yr <= 2021 ? 17 * 32 : 18 * 32;
                     return (count == expected);
                 }
             }

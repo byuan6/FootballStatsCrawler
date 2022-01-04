@@ -15,7 +15,7 @@ namespace FFToiletBowlWeb
             "I think the best definition for regressive gambling is a zero-sum game where for someone to win, <b>someone who actually knows what he's doing telling people what to do must lose</b>.",
             "I believe all games with an intelligent opponent, have <b>an unavoidable degree of uncertainty, usually at the worst possible moment</b>.",
             "I think that any belief of past results, indicating <b>future performance, needs to consider the increased risk added based on how much everyone else hates you</b>.",
-            "I believe <b>when the Turing test is applied to humans</b>, it takes a life of its own, whose outcome is to determine who is the intellectual loser between the tested and the tester.",
+            "I believe <b>when the Turing test is inappropriately applied to humans</b>, it takes a life of its own, whose outcome is to determine who is the intellectual loser between the tested and the tester.",
             "I believe it's ok for everyone to believe themselves a genius at any point in time, but just don't overdo it.",
             "My best year at fantasy football, <b>MY OWN ALGORITHM told me I was two wins better than I should have been, based on blind luck</b>.",
             "I feel it is always better to remind yourself, that the smarter you are, the more outnumbered you will be.",
@@ -23,6 +23,7 @@ namespace FFToiletBowlWeb
             "I'm not discouraging gambling, I'm avoiding a lawsuit that I'm liable for other people's human weaknesses",
             "Instinct is another word for mother nature compensating for lack of intelligence, bc intelligence is just too cumbersome to be effectively inherited.",
             "Intelligence is often understanding how you were the recipient of blind luck, which ironically makes you feel stupid.",
+            "Social scientists have to be wiser than natural scienctists.  Nature doesn't fight back, when it learns the results.",
         };
 
         protected void Page_Load(object sender, EventArgs e)

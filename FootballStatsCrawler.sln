@@ -34,6 +34,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DraftSimulator", "DraftSimu
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FFToiletBowlWeb", "FFToiletBowlWeb\FFToiletBowlWeb.csproj", "{EF2A1961-E5D2-47DB-97CD-290A00826D30}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MsSqlClrUtility", "MsSqlClrUtility\MsSqlClrUtility.csproj", "{F9C9731C-3607-4783-8F40-BD8BDBA125EC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EstPerfProjection", "EstPerfProjection\EstPerfProjection.csproj", "{040F91A0-40AD-4E09-9980-1B75C2CDE4FF}"
+EndProject
 Global
 	GlobalSection(TestCaseManagementSettings) = postSolution
 		CategoryFile = FootballStatsCrawler.vsmdi
@@ -276,6 +280,26 @@ Global
 		{EF2A1961-E5D2-47DB-97CD-290A00826D30}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
 		{EF2A1961-E5D2-47DB-97CD-290A00826D30}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{EF2A1961-E5D2-47DB-97CD-290A00826D30}.Release|x86.ActiveCfg = Release|Any CPU
+		{F9C9731C-3607-4783-8F40-BD8BDBA125EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F9C9731C-3607-4783-8F40-BD8BDBA125EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F9C9731C-3607-4783-8F40-BD8BDBA125EC}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{F9C9731C-3607-4783-8F40-BD8BDBA125EC}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{F9C9731C-3607-4783-8F40-BD8BDBA125EC}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{F9C9731C-3607-4783-8F40-BD8BDBA125EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F9C9731C-3607-4783-8F40-BD8BDBA125EC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F9C9731C-3607-4783-8F40-BD8BDBA125EC}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{F9C9731C-3607-4783-8F40-BD8BDBA125EC}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{F9C9731C-3607-4783-8F40-BD8BDBA125EC}.Release|x86.ActiveCfg = Release|Any CPU
+		{040F91A0-40AD-4E09-9980-1B75C2CDE4FF}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{040F91A0-40AD-4E09-9980-1B75C2CDE4FF}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{040F91A0-40AD-4E09-9980-1B75C2CDE4FF}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{040F91A0-40AD-4E09-9980-1B75C2CDE4FF}.Debug|x86.ActiveCfg = Debug|x86
+		{040F91A0-40AD-4E09-9980-1B75C2CDE4FF}.Debug|x86.Build.0 = Debug|x86
+		{040F91A0-40AD-4E09-9980-1B75C2CDE4FF}.Release|Any CPU.ActiveCfg = Release|x86
+		{040F91A0-40AD-4E09-9980-1B75C2CDE4FF}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{040F91A0-40AD-4E09-9980-1B75C2CDE4FF}.Release|Mixed Platforms.Build.0 = Release|x86
+		{040F91A0-40AD-4E09-9980-1B75C2CDE4FF}.Release|x86.ActiveCfg = Release|x86
+		{040F91A0-40AD-4E09-9980-1B75C2CDE4FF}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

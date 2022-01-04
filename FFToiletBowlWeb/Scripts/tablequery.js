@@ -17,6 +17,20 @@ function selectWhere(tbl, col, castfn, where) {
     }
     return values;
 }
+function selectRowWhere(tbl, castfn, where) {
+    var count = 0;
+    var r = tbl.rows;
+    var len = r.length;
+    var values = new Array();
+    for (var i = 0; i < len; i++) {
+        var tr = r[i];
+        if (where==null || where(tr)) {
+            var value = castfn(tr);
+            values.push(value);
+        }
+    }
+    return values;
+}
 function selecttake(tbl, col, max) {
     var count = 0;
     var r = tbl.rows;

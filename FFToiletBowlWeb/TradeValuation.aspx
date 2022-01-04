@@ -28,7 +28,7 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
     <div class="captionBlock grow" style="display:inline-block; width:49%;vertical-align:top;">
         <h1>
-            <asp:Label ID="Year" runat="server"/> Season<br>
+            <asp:Label ID="Year" runat="server"/> Season<br/>
             Before Week <asp:Label ID="Week" runat="server"/>
         </h1>
         <h2>Trade Value</h2>

@@ -191,21 +191,6 @@ div.menu ul li a:active
 
 /* DYNAMIC ELEMENTS   
 ----------------------------------------------------------*/
-div.rosterSpace 
-{
-    vertical-align:top;
-}
-div.rosterList 
-{
-    width:200px; 
-    display:inline-block;
-    vertical-align:top;
-    text-align:left;
-}
-div.rosterList div button
-{
-    float:right;
-}
 
 
 /* AUTOCOMPLETE ELEMENTS   

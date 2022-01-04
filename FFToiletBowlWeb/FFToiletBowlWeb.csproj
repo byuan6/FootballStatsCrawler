@@ -61,7 +61,9 @@
     <Content Include="Images\kdefensehandicap1.png" />
     <Content Include="Images\qbdefensehandicap1.png" />
     <Content Include="Images\rbdefensehandicap1.png" />
+    <Content Include="InjuryModelData.aspx" />
     <Content Include="leaderboard.aspx" />
+    <Content Include="PlayerIndex.aspx" />
     <Content Include="projectedrankings.aspx" />
     <Content Include="rankingresults.aspx" />
     <Content Include="Scripts\2.8.0\Chart.min.js" />
@@ -69,6 +71,7 @@
     <Content Include="Scripts\sorttable.js" />
     <Content Include="Scripts\tablequery.js" />
     <Content Include="TradeValuation.aspx" />
+    <Content Include="viewschedule.aspx" />
     <Content Include="volatilitycandidates.aspx" />
     <Content Include="Styles\Site.css" />
     <Content Include="Default.aspx" />
@@ -136,6 +139,14 @@
       <DependentUpon>DefenseRating.aspx</DependentUpon>
     </Compile>
     <Compile Include="Helper.cs" />
+    <Compile Include="IDataExposed.cs" />
+    <Compile Include="InjuryModelData.aspx.cs">
+      <DependentUpon>InjuryModelData.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="InjuryModelData.aspx.designer.cs">
+      <DependentUpon>InjuryModelData.aspx</DependentUpon>
+    </Compile>
     <Compile Include="JsonFolderHandler.cs" />
     <Compile Include="JsonFolderModule.cs" />
     <Compile Include="leaderboard.aspx.cs">
@@ -144,6 +155,13 @@
     </Compile>
     <Compile Include="leaderboard.aspx.designer.cs">
       <DependentUpon>leaderboard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PlayerIndex.aspx.cs">
+      <DependentUpon>PlayerIndex.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PlayerIndex.aspx.designer.cs">
+      <DependentUpon>PlayerIndex.aspx</DependentUpon>
     </Compile>
     <Compile Include="projectedrankings.aspx.cs">
       <DependentUpon>projectedrankings.aspx</DependentUpon>
@@ -166,6 +184,14 @@
     <Compile Include="TradeValuation.aspx.designer.cs">
       <DependentUpon>TradeValuation.aspx</DependentUpon>
     </Compile>
+    <Compile Include="UserJson.cs" />
+    <Compile Include="viewschedule.aspx.cs">
+      <DependentUpon>viewschedule.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="viewschedule.aspx.designer.cs">
+      <DependentUpon>viewschedule.aspx</DependentUpon>
+    </Compile>
     <Compile Include="volatilitycandidates.aspx.cs">
       <DependentUpon>volatilitycandidates.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -187,7 +213,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Json\" />
+    <Folder Include="Json\InjuryModelData\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Account\Web.config" />
@@ -224,6 +250,10 @@
       </FlavorProperties>
     </VisualStudio>
   </ProjectExtensions>
+  <PropertyGroup>
+    <PostBuildEvent>del /q $(ProjectDir)\Json\*.json 
+del /q $(ProjectDir)\Json\InjuryModelData\*.json</PostBuildEvent>
+  </PropertyGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">

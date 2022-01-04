@@ -110,11 +110,11 @@ function openWindow(URL) {
   <table width="990" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF">
     <tr> 
       <td valign="top" width="10" bgcolor="#FFFFFF" rowspan="2">&nbsp;</td>
-      <td width="220" rowspan="2" valign="top"><img src="../../common/spacer_whi.gif" width="2" height="5"><br> 
-        <a href="../../index.html"><img src="../../creative/08_179_fftoday.gif" alt="Fantasy Football Today - fantasy football rankings, cheatsheets, and information" width="179" height="106" border="0"></a><img src="../../common/spacer_whi.gif" width="2" height="1"><br> 
-        <span class="logotease">A Fantasy Football Community!</span> <br> 
+      <td width="220" rowspan="2" valign="top"><img src="../../common/spacer_whi.gif" width="2" height="5"><br/> 
+        <a href="../../index.html"><img src="../../creative/08_179_fftoday.gif" alt="Fantasy Football Today - fantasy football rankings, cheatsheets, and information" width="179" height="106" border="0"></a><img src="../../common/spacer_whi.gif" width="2" height="1"><br/> 
+        <span class="logotease">A Fantasy Football Community!</span> <br/> 
         <!-- Todays Date -->
-		<img src="../../common/spacer_whi.gif" width="1" height="5"><br>
+		<img src="../../common/spacer_whi.gif" width="1" height="5"><br/>
 		<span class="date">
         <script language="JavaScript"><!--
        var DayOfWeek = new Array('Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday');
@@ -127,8 +127,8 @@ function openWindow(URL) {
                theDate.getDate() + ', 2016' +
                
               '</font></NOBR>');
-        //--></script><br><img src="../../common/spacer_whi.gif" width="2" height="3"><br></span></td>
-      <td align="center" valign="top"><img src="../../common/spacer_whi.gif" width="2" height="5"><br> 
+        //--></script><br/><img src="../../common/spacer_whi.gif" width="2" height="3"><br/></span></td>
+      <td align="center" valign="top"><img src="../../common/spacer_whi.gif" width="2" height="5"><br/> 
         <!-- SMG_FFToday/728x90_1a/sports/fantasy/NFL.general -->
 <div id="usmg_ad_NFL.general_fantasy_sports_728x90_1a">
 <script type='text/javascript'>
@@ -143,8 +143,8 @@ googletag.display('usmg_ad_NFL.general_fantasy_sports_728x90_1a');
     <tr> 
       <td rowspan="2" align="right" valign="bottom" class="date"> <a href="../../signup.php">Create 
         An Account</a>&nbsp; | &nbsp;<a class="temp" href="../../ad/index.htm">Advertise</a>&nbsp; 
-        | &nbsp;<a class="temp" href="../../contact/index.htm">Contact</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br> 
-        <img src="../../common/spacer_whi.gif" width="2" height="5"><br> <table width="100%" border="0" cellpadding="0" cellspacing="0">
+        | &nbsp;<a class="temp" href="../../contact/index.htm">Contact</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br/> 
+        <img src="../../common/spacer_whi.gif" width="2" height="5"><br/> <table width="100%" border="0" cellpadding="0" cellspacing="0">
           <form action='http://sub.ezinedirector.net/index.cfm' method='post'>
 								<input name='fuseaction' type='hidden' value='s' />
 								<input name='EzineID' type='hidden' value='964693455' />
@@ -193,15 +193,15 @@ googletag.display('usmg_ad_NFL_fantasy_sports_launchpad');
   <!-- ---------------  Main Table  ------------- --> 
   <table bgcolor="white" cellspacing="0" cellpadding="0" border="0" width="990" align="center">
     <tr> 
-      <td width="20" bgcolor="#ffffff" valign="top" rowspan="2"><img src="../../common/spacer_whi.gif" width="20" height="2"><br> 
+      <td width="20" bgcolor="#ffffff" valign="top" rowspan="2"><img src="../../common/spacer_whi.gif" width="20" height="2"><br/> 
       </td>
-      <td align="center" valign="top" width="850"><img src="../../common/spacer_whi.gif" width="5" height="2"><br> 
+      <td align="center" valign="top" width="850"><img src="../../common/spacer_whi.gif" width="5" height="2"><br/> 
       </td>
-      <td width="20" bgcolor="#ffffff" rowspan="2" valign="top"><img src="../../common/spacer_whi.gif" width="20" height="8"><br> 
+      <td width="20" bgcolor="#ffffff" rowspan="2" valign="top"><img src="../../common/spacer_whi.gif" width="20" height="8"><br/> 
       </td>
     </tr>
     <tr> 
-      <td valign="top" class="bodycontent"><img src="../../common/spacer_whi.gif" width="5" height="10"><br>
+      <td valign="top" class="bodycontent"><img src="../../common/spacer_whi.gif" width="5" height="10"><br/>
         <table width="100%" border="0" cellspacing="1" cellpadding="3">
           <tr> 
             <td width="21%" height="26" valign="bottom"><span class="pageheader">Doug 
@@ -215,24 +215,24 @@ googletag.display('usmg_ad_NFL_fantasy_sports_launchpad');
             <td colspan="2" class="line"></td>
           </tr>
           <tr> 
-            <td class="update"> Staff Writer<br> </td>
-            <td align="right" class="update"> <br> </td>
+            <td class="update"> Staff Writer<br/> </td>
+            <td align="right" class="update"> <br/> </td>
           </tr>
         </table>
-        <img src="../../common/spacer_whi.gif" alt="" border="0" width="1" height="4"><br> 
+        <img src="../../common/spacer_whi.gif" alt="" border="0" width="1" height="4"><br/> 
         <!-- Begin Content Table------------------------------------------------->
         <table width="100%" border="0" cellspacing="1" cellpadding="3">
            <tr> 
             <td class="bodycontent"> <span class="headerbluebig">Top 150 Big Board, 
-              PPR: Version 1.0</span><br> <span class="largeheadlinegrey">Preseason Matchup Analysis</span><br>
-              <span class="date">8/16/16</span><br> <br> </td>
+              PPR: Version 1.0</span><br/> <span class="largeheadlinegrey">Preseason Matchup Analysis</span><br/>
+              <span class="date">8/16/16</span><br/> <br/> </td>
 			 
             <td align="right" valign="top" class="bodycontent"><span class="headline">PPR 
               </span> | <a href="16_pma_big_board_halfppr_1.html">0.5 PPR</a> 
               | <a href="16_pma_big_board_nonppr_1.html">Non-PPR</a></td>
           </tr>
 			  <tr><td class="bodycontent" colspan="2"><a href="https://twitter.com/share" class="twitter-share-button" data-via="FF_Today" data-lang="en">Tweet</a> <div class="fb-like" data-send="false" data-layout="button_count" data-width="250" data-show-faces="false" data-font="verdana" data-action="recommend"></div></td></tr>
-			  <tr><td class="bodycontent" colspan="2"><br>
+			  <tr><td class="bodycontent" colspan="2"><br/>
 <div class="ad-medium-rectangle"> 
                 <div style="width: 300px;"><!-- SMG_FFToday/300x250_1a/sports/fantasy/NFL.general -->
 <div id="usmg_ad_NFL.general_fantasy_sports_300x250_1a">
@@ -313,11 +313,11 @@ googletag.display('usmg_ad_NFL.general_fantasy_sports_300x250_1a');
                 to interrupt it. Just because it is an impossible task, however, 
                 doesn't make it worth doing. Someone is going to win your league 
                 this year, so the title might as well go to the person weighing 
-                as many relevant factors as possible in his analysis.<br>
-                <br>
+                as many relevant factors as possible in his analysis.<br/>
+                <br/>
                 Before I get to the boards, I would like to remind readers about 
-                two key points: <br>
-                <br>
+                two key points: <br/>
+                <br/>
                 1) I doubt you will find another draft board like this one and 
                 further doubt you will find a similar set of rankings anywhere 
                 else. <strong>The standard the industry uses to measure accuracy 
@@ -327,8 +327,8 @@ googletag.display('usmg_ad_NFL.general_fantasy_sports_300x250_1a');
                 while inconsistency and bad matchups at the wrong time usually 
                 lead to frustration. Someday, I hope the industry catches on to 
                 my way of thinking. Until then, I’ll try to win as many 
-                titles as possible and help you do the same.<br>
-                <br>
+                titles as possible and help you do the same.<br/>
+                <br/>
                 2 ) I'll include the risk signs you have become familiar with 
                 in recent years when I release my final Big Boards in a couple 
                 of weeks. For now, owners can take solace in the fact the SSI 
@@ -337,10 +337,10 @@ googletag.display('usmg_ad_NFL.general_fantasy_sports_300x250_1a');
                 Among the areas I consider at each position are durability and 
                 job security, so don't think the absence of <img src="../../images/btn_caution2.gif" width="15" height="15"> 
                 or <img src="../../common/alert_red_icon.jpg" width="15" height="15"> 
-                means I didn't account for such risk factors.<br>
-                <br>
-                Let&#8217;s revisit the color-coding system before we start:<br>
-                <br>
+                means I didn't account for such risk factors.<br/>
+                <br/>
+                Let&#8217;s revisit the color-coding system before we start:<br/>
+                <br/>
                 <span class="headline">Red &#8211;</span> A very difficult matchup. 
                 For lower-level players, a red matchup means they should not be 
                 used in fantasy that week. For a second- or third-tier player, 
@@ -362,13 +362,13 @@ googletag.display('usmg_ad_NFL.general_fantasy_sports_300x250_1a');
                 get much better than this. For non-elite players, the stage is 
                 basically set for said player to exploit the matchup. For the 
                 elite player, this matchup should produce special numbers.</p>
-              <span class="emphasisheadline">Key:</span><br>
-              <br>
-              <strong>OVR &#8211;</strong> Overall Rank<br>
-              <br>
+              <span class="emphasisheadline">Key:</span><br/>
+              <br/>
+              <strong>OVR &#8211;</strong> Overall Rank<br/>
+              <br/>
               <strong>FPts/ G &#8211;</strong> Fantasy points/game (over first 
-              four weeks)<br>
-              <br>
+              four weeks)<br/>
+              <br/>
               <strong>SSI &#8211;</strong> Although you will not see it featured 
               in the Big Boards this week or next, SSI is the sum of several position-specific 
               attributes that I feel are important to fantasy production, weighted 
@@ -376,8 +376,8 @@ googletag.display('usmg_ad_NFL.general_fantasy_sports_300x250_1a');
               decimal point one spot to the left and think of each score as a 
               percentage. It may also help to think of the final score as the 
               likelihood that player will produce at the level I have projected 
-              him if his current environment stays roughly the same as it is now.<br>
-              <br>
+              him if his current environment stays roughly the same as it is now.<br/>
+              <br/>
               <strong>Value -</strong> After a year away, standard deviation has 
               returned to the Big Boards. &quot;Value&quot; is essentially using 
               the VORP (Value over Replacement Player) concept for a two-RB, three-WR 
@@ -388,8 +388,8 @@ googletag.display('usmg_ad_NFL.general_fantasy_sports_300x250_1a');
               deviation from the 30th-ranked and 42nd-ranked player, respectively, 
               to better account for the vast number of leagues that feature flex 
               spots. Whereas I used point averages as my basis for value in past 
-              seasons, I am using SSI for it now.<br>
-              <br>
+              seasons, I am using SSI for it now.<br/>
+              <br/>
               Just so you know what you are getting yourself into, here are some 
               of the attributes I weighed and scored at each position: 
               <p><span class="headline">Quarterback &#8211;</span> Talent, aggressiveness 
@@ -402,9 +402,9 @@ googletag.display('usmg_ad_NFL.general_fantasy_sports_300x250_1a');
                 scheme fit and the quality of quarterback play.</p>
               <p><span class="headline">Tight end &#8211;</span> Talent, importance 
                 to the team in the red zone, targets/game, scheme fit and the 
-                quality of quarterback play.<br>
-                <br>
-                <em><span class="headlinegrey">Notes:</span></em><br>
+                quality of quarterback play.<br/>
+                <br/>
+                <em><span class="headlinegrey">Notes:</span></em><br/>
                 1. For this first set of Big Boards, I have chosen to stop at 
                 150 players. Later this week, I will set up the first non-PPR 
                 Big Board. Next week, I will release my first Big Boards for 0.5 
@@ -4212,7 +4212,7 @@ googletag.display('usmg_ad_NFL.general_fantasy_sports_300x250_1a');
                     </table></td>
                 </tr>
               </table>
-              <br>
+              <br/>
               Most of us are familiar with the rationale that roughly half of 
               the players in the first round bust every year. While the term "bust" 
               means different things to different people, a bust to me is a player 
@@ -4423,13 +4423,13 @@ googletag.display('usmg_ad_NFL.general_fantasy_sports_300x250_1a');
                 breakout campaign. Gordon was once a premier talent in the league 
                 and might again reach those heights, but I think his current ADP 
                 can be attributed partly to Joe Q. Public's lack of appreciation 
-                about how much good fortune he'll need to produce before midseason.<br>
-                <br>
+                about how much good fortune he'll need to produce before midseason.<br/>
+                <br/>
                 <span class="headlinegrey">Next:</span> <a href="16_pma_big_board_nonppr_1.html">Non-PPR 
                 Big Board</a> <img src="../../common/arrows_dbl.gif" width="14" height="11" align="absbottom"> 
                 | <a href="16_pma_big_board_halfppr_1.html">0.5 PPR Big Board</a> 
                 <img src="../../common/arrows_dbl.gif" width="14" height="11" align="absbottom"> 
-                <br>
+                <br/>
               </p>
              <hr width="100%" size="1"> <em>Doug Orth has written for FF 
               Today since 2006 and been featured in USA Today&#8217;s Fantasy 
@@ -4437,7 +4437,7 @@ googletag.display('usmg_ad_NFL.general_fantasy_sports_300x250_1a');
               hour-long, pre-kickoff fantasy football internet chat every Sunday 
               in 2012-13 and appears as a guest analyst on a number of national 
               sports radio shows, including Sirius XM&#8217;s &#8220;Fantasy Drive&#8221;. 
-              Doug is also a member of the Fantasy Sports Writers Association.</em><br> 
+              Doug is also a member of the Fantasy Sports Writers Association.</em><br/> 
               <p>
                 <div id="disqus_thread"></div>
     <script type="text/javascript">
@@ -4457,7 +4457,7 @@ googletag.display('usmg_ad_NFL.general_fantasy_sports_300x250_1a');
           </tr>
         </table>
         <!-- End Content Table ----------------------->
-        <br> </td>
+        <br/> </td>
     </tr>
   </table>
   
@@ -4474,12 +4474,12 @@ googletag.display('usmg_ad_NFL.general_fantasy_sports_300x250_1a');
     <li><a href="../../ad/index.htm">Advertise</a> -</li>
 	<li><a href="../../signup.php">Sign Up / Login</a></li>
   </ul>
-  <p id="copyright" align="left">Copyright &#169; 1998-2016 FFToday.com. All rights reserved.<br>
+  <p id="copyright" align="left">Copyright &#169; 1998-2016 FFToday.com. All rights reserved.<br/>
   FFToday.com is a member of the <a href="http://www.fsta.org/">Fantasy Sports 
-  Trade Association</a>.<br>
+  Trade Association</a>.<br/>
   Partner of <a href="http://www.usatoday.com/sports/index">USA TODAY Sports Digital Properties</a>.</td>
-	  <td valign="top" class="copyright" nowrap align="left" width="110"><img src="../../common/spacer_whi.gif" width="1" height="20"><br><a href="http://twitter.com/FF_Today"><img src="../../common/icn_twitter_follow_30.gif" width="99" height="30" border="0"></a></td>
-      <td valign="top" class="copyright" nowrap align="left" width="355"><img src="../../common/spacer_whi.gif" width="1" height="20"><br><a href="http://www.facebook.com/fftoday"><img src="../../common/icn_facebook_find_30.gif" width="99" height="30" border="0"></a></td>
+	  <td valign="top" class="copyright" nowrap align="left" width="110"><img src="../../common/spacer_whi.gif" width="1" height="20"><br/><a href="http://twitter.com/FF_Today"><img src="../../common/icn_twitter_follow_30.gif" width="99" height="30" border="0"></a></td>
+      <td valign="top" class="copyright" nowrap align="left" width="355"><img src="../../common/spacer_whi.gif" width="1" height="20"><br/><a href="http://www.facebook.com/fftoday"><img src="../../common/icn_facebook_find_30.gif" width="99" height="30" border="0"></a></td>
 	  </tr></table>
 	  <!-- SMG_FFToday/skin/sports/fantasy/NFL.general -->
 <!-- <div id="usmg_ad_NFL.general_fantasy_sports_skin">
